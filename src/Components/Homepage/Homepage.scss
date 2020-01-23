@@ -1,0 +1,26 @@
+.homepage__main {
+  background-image: url('../../Assets/adventure-alpine-background-black-and-white-355747.jpg');
+  background-size: contain;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage__name {
+  color: #fff;
+  font-size: 5em;
+  margin: 0;
+}
+
+.homepage__job {
+  color: #fff; 
+  font-size: 3em;
+  align-self: center;
+}
+
+.homepage__text-container {
+  display: flex;
+  flex-direction: column;
+}
