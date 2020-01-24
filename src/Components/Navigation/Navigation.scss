@@ -1,0 +1,29 @@
+$active-color: #f2d816;
+
+.navbar__main {
+  position: absolute;
+  left: 65%;
+  z-index: 1;
+}
+
+.navbar__container {
+  margin-top: 5px;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.2em;
+  margin-right: 5px;
+  outline: none;
+    &:hover {
+      color: #000;
+      border-bottom: 2px solid #000;
+    }
+    &:active {
+      color: $active-color;
+      border-top: 2px solid $active-color;
+      border-bottom: none;
+    }
+}

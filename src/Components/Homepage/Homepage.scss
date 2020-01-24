@@ -1,6 +1,6 @@
 .homepage__main {
   background-image: url('../../Assets/adventure-alpine-background-black-and-white-355747.jpg');
-  background-size: contain;
+  background-size: cover;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -12,15 +12,45 @@
   color: #fff;
   font-size: 5em;
   margin: 0;
+  cursor: default;
 }
 
 .homepage__job {
   color: #fff; 
   font-size: 3em;
   align-self: center;
+  cursor: default;
 }
 
 .homepage__text-container {
   display: flex;
   flex-direction: column;
+}
+
+.homepage__photo-container {
+  height: 100vh;
+  width: 100%;
+  background: #fff;
+  margin: none;
+}
+
+.photo-headshot {
+  background-image: url('../../Assets/headshot.jpg');
+  background-size: contain;
+  height: 200px;
+  width: 200px;
+  border-radius: 5px;
+   &:hover {
+     animation: wobble 1s ease-out 1 forwards ;
+   }
+}
+
+@keyframes wobble {
+  0% { transform: translateX(0%); }
+  15% { transform: rotate(-5deg); }
+  30% { transform: rotate(3deg); }
+  45% { transform: rotate(-3deg); }
+  60% { transform: rotate(2deg); }
+  75% { transform: rotate(-1deg); }
+  100% { transform: translateX(0%); }
 }
